@@ -14,7 +14,7 @@ int main() {
         }
 
         // figure out if the book wants something different
-        if (multiples > 21) {
+        if (multiples > 99 ) {
 
             break;
         }
