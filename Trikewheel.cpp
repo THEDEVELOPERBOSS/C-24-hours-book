@@ -10,7 +10,7 @@ class Tricycle {
         void pedal();
         void brake();
         void wheelSize();
-        int WheelSize(4);
+        
     private:
         int speed;
 };
@@ -56,12 +56,14 @@ void Tricycle::brake() {
     cout << "\nBraking; tricycle speed " << getSpeed() << " mph\n";
 }
 void Tricycle::wheelSize() {
-    cout << "The wheel size is " << WheelSize() << " \n"
+   int wheelSize(4);
+   cout << "The wheel size is " << wheelSize << " \n";
 }
 // create a trike and ride it 
 int main() {
     
     Tricycle wichita(5);
+    wichita.wheelSize();
     wichita.pedal();
     wichita.pedal();
     wichita.brake();
