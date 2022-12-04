@@ -32,16 +32,5 @@ int main() {
     delete pRags;
 
     cout << "Exiting, watch Frisky go ...\n";
-
-    cout << "SimpleCat Spooky ...\n";
-    SimpleCat Spooky;
-
-    cout << "SimpleCat *pRags = new SimpleCat ...\n";
-
-    cout << "Spooky is scary. \n";
-
-    cout  << "delete pRag s ...\n";
-    delete pRags;
-
     return 0; 
 }
