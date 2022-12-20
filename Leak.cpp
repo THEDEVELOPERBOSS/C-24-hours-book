@@ -16,24 +16,24 @@ private:
 SimpleCat::SimpleCat(int age, int weight):
 itsAge(age), itsWeight(weight) {}
 
-SimpleCat & TheFunction();
+SimpleCat* TheFunction();
 
 int main() {
 
-    SimpleCat &rCat = TheFunction();
-    int age = rCat.GetAge();
+    SimpleCat* rCat = TheFunction();
+    int age = rCat->GetAge();
     cout << "rCat is " << age << " years old!\n";
     cout << "&rCat: " << &rCat << "\n";
     // How do you get rid of that memory?
-    SimpleCat *pCat = &rCat;
+    SimpleCat* pCat = rCat;
     delete pCat;
     // Uh oh, rCat now refers to ??
     return 0;
 }
 
-SimpleCat &TheFunction() {
+SimpleCat* TheFunction() {
 
-    SimpleCat *pFrisky = new SimpleCat(5,9);
+    SimpleCat* pFrisky = new SimpleCat(5,9);
     cout << "pFrisky: " << pFrisky << "\n";
-    return *pFrisky;
+    return pFrisky;
 }
