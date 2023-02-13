@@ -199,7 +199,7 @@ int main() {
         cin >> val;
         valtwo++;
         
-        if (!val)
+        if (!val)ok Link
             break;
         pData = new Data(val);
         ll.insert(pData);
